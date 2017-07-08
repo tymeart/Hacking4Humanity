@@ -1,12 +1,23 @@
 {
-  "name": "Hackathon",
+  "name": "Hacking4Humanity",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "freecodecamp team workspace",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucask42/Hacking4Humanity.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucask42/Hacking4Humanity/issues"
+  },
+  "homepage": "https://github.com/lucask42/Hacking4Humanity#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
 }
