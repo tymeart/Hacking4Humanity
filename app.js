@@ -1,5 +1,3 @@
-// log in using facebook, twitter, google, linkedin?
-
 var http = require('http');
 var fs = require('fs');
 var index = fs.readFileSync('index.html');
