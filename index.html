@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <!-- <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+      function start() {
+        // Initializes the client with the API key and the Translate API.
+        gapi.client.init({
+          'apiKey': 'AIzaSyDdL8kztE9cd-zjdCIJg1g89Pm9V18TD38aaaa',
+          'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/translate/v2/rest'],
+        }).then(function() {
+          // Executes an API request, and returns a Promise.
+          // The method name `language.translations.list` comes from the API discovery.
+          return gapi.client.language.translations.list({
+            q: 'hello world',
+            source: 'en',
+            target: 'de',
+          });
+        }).then(function(response) {
+          console.log(response.result.data.translations[0].translatedText);
+        }, function(reason) {
+          console.log('Error: ' + reason.result.error.message);
+        });
+      };
+
+      // Loads the JavaScript client library and invokes `start` afterwards.
+      gapi.load('client', start);
+    </script> -->
+  </head>
+  <body>
+    <a href="https://secure.meetup.com/oauth2/authorize?client_id=ueqb8fudpl8r1l7p1975531a00&response_type=token&redirect_uri=http://lucas.offworldstudios.com/hackathon/authd.html">activate</a>
+    <p>
+    <p>
+    <a href="https://www.meetup.com/account/oauth_apps/">deactivate</a>
+
+
+
+
+  </body>
+</html>
