@@ -1,4 +1,5 @@
-
+console.log('made it to app.js')
+debugger
 const express = require('express')
 const app = express()
 debugger
