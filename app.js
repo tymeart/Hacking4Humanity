@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 app.get('/authd', function (req, res) {
 
   //let token = req.originalUrl.split("access_token=")[1].split("&")[0]
-  var pathThing = url.parse(req.url).pathname
+  var pathThing = url.parse(req.url).hash
   //let token = window.location.hash.split("access_token=")[1].split("&")[0]
   //var result = search.findGroupByTerms('RUBY')
 
