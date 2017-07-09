@@ -2,9 +2,9 @@ const request = require("request")
 var exports = module.exports = {}
 let url = "https://api.meetup.com/"
 // running locally
-let token = window.location.hash.split("access_token=")[1].split("&")[0]
+//let token = window.location.hash.split("access_token=")[1].split("&")[0]
 // running on web server
-// let token = window.location.hash.split("access_token=")[1].split("&")[0]
+let token = window.location.hash.split("access_token=")[1].split("&")[0]
 let numResults = '3'
 exports.findGroupByTerms = (terms) => {
   console.log('the button works!')
