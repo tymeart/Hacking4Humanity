@@ -18,9 +18,10 @@ app.get('/authd', function (err, req, res) {
   //let token = req.originalUrl.split("access_token=")[1].split("&")[0]
   console.log(req.path)
   //let token = window.location.hash.split("access_token=")[1].split("&")[0]
-  var result = search.findGroupByTerms('RUBY')
+  //var result = search.findGroupByTerms('RUBY')
 
-  res.render('authd', {result})
+  // res.render('authd', {result})
+  res.render('authd')
 })
 
 app.listen(process.env.PORT || 3333, function(){
