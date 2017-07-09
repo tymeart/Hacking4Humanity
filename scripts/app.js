@@ -1,2 +1,2 @@
-var search = require("./meetupAPI")
+const search = require("./meetupAPI")
 search.findGroupByTerms("isanyoneoutthere")

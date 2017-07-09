@@ -1,12 +1,17 @@
 const request = require("request")
 var exports = module.exports = {}
 let url = "https://api.meetup.com/"
+
 // running locally
 //let token = window.location.hash.split("access_token=")[1].split("&")[0]
 // running on web server
-let token = window.location.hash.split("access_token=")[1].split("&")[0]
+//let token = window.location.hash.split("access_token=")[1].split("&")[0]
+
+//app.param('access_token', )
+
 let numResults = '3'
 exports.findGroupByTerms = (terms) => {
+console.log(terms)
   terms = Array.isArray(terms) ? terms.join() : terms
   request(`${url}find/groups?page=${numResults}&text=${terms}&access_token=${token}`, (error, response, body) => {
     if (!error && response.statusCode == 200) {
