@@ -12,12 +12,12 @@ app.get('/', function (req, res) {
 app.get('/authd', function (req, res) {
 
   //let token = req.originalUrl.split("access_token=")[1].split("&")[0]
-  var pathThing = url.parse('http://sample.com/#test').hash
+  var fragment = url.parse(req.url).href
   //let token = window.location.hash.split("access_token=")[1].split("&")[0]
   //var result = search.findGroupByTerms('RUBY')
 
   // res.render('authd', {result})
-  res.render('authd', {result: pathThing})
+  res.render('authd', {result: fragment})
 })
 
 app.listen(process.env.PORT || 3333, function(){
