@@ -1,2 +1,2 @@
-const search = require("./bundle")
+const search = require("./meetupAPI")
 search.findGroupByTerms("isanyoneoutthere")
