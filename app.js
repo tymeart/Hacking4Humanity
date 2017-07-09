@@ -1,5 +1,3 @@
-console.log('made it to app.js')
-debugger
 const express = require('express')
 const app = express()
 debugger
@@ -13,16 +11,16 @@ app.get('/', function (req, res) {
 
 app.get('/authd', function (err, req, res) {
 
-  if (err){
-    console.log(err)
-  }
+  // if (err){
+  //   console.log(err)
+  // }
   //let token = req.originalUrl.split("access_token=")[1].split("&")[0]
-  console.log(req.path)
+  // console.log(req.path)
   //let token = window.location.hash.split("access_token=")[1].split("&")[0]
   //var result = search.findGroupByTerms('RUBY')
 
   // res.render('authd', {result})
-  res.render('authd')
+  res.send('THIS ROUTE WORKS')
 })
 
 app.listen(process.env.PORT || 3333, function(){
