@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-debugger
 const search = require("./scripts/meetupAPI")
 
 app.set('view engine', 'ejs')
@@ -9,7 +8,7 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
-app.get('/authd', function (err, req, res) {
+app.get('/authd', function (req, res) {
 
   // if (err){
   //   console.log(err)
