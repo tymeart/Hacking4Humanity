@@ -1,9 +1,15 @@
-const request = require(‘request’)
+// const request = require("request")
+
+console.log("HI")
+
 
 var exports = module.exports = {}
 let url = "https://api.meetup.com/"
-let token = window.location.hash.split(“access_token=“)[1].split(“&”)[0]
-let numResults = ‘3’
+// let token = window.location.hash.split("access_token=")[1].split("&")[0]
+let token = "457dbc6f23ee699347c14eb248e9a782"
+let numResults = '3'
+
+
 
 exports.findGroupByTerms = (terms) => {
  terms = Array.isArray(terms) ? terms.join() : terms
