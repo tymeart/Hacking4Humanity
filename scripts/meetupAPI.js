@@ -4,7 +4,9 @@ let url = "https://api.meetup.com/"
 // running locally
 //let token = window.location.hash.split("access_token=")[1].split("&")[0]
 // running on web server
-let token = window.location.hash.split("access_token=")[1].split("&")[0]
+//let token = window.location.hash.split("access_token=")[1].split("&")[0]
+let token = req.originalUrl.split("access_token=")[1].split("&")[0]
+
 let numResults = '3'
 exports.findGroupByTerms = (terms) => {
   terms = Array.isArray(terms) ? terms.join() : terms
