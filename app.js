@@ -7,8 +7,9 @@ app.set('view engine', 'ejs')
 app.get('/', function (req, res) {
   res.render('index')
 })
-
+debugger
 app.get('/authd', function (err, req, res) {
+
   if (err){
     console.log(err)
   }
