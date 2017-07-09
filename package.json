@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node scripts/app.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/lucask42/Hacking4Humanity#readme",
   "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
     "request": "^2.81.0"
   }
 }

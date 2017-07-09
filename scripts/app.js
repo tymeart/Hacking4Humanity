@@ -1,2 +1,2 @@
-
-search.findGroupByTerms('ruby')
+var search = require("./meetupAPI")
+search.findGroupByTerms("ruby")
