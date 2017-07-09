@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
-app.get('/authd.ejs', function (req, res) {
+app.get('/authd', function (req, res) {
   //let token = req.originalUrl.split("access_token=")[1].split("&")[0]
   console.log(req.originalUrl)
   //let token = window.location.hash.split("access_token=")[1].split("&")[0]
