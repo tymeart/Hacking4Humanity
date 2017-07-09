@@ -9,7 +9,9 @@ app.get('/', function (req, res) {
 })
 
 app.get('/authd.ejs', function (req, res) {
+  let token = req.originalUrl.split("access_token=")[1].split("&")[0]
   var result = search.findGroupByTerms('ruby')
+
   res.render('authd', {result})
 })
 
