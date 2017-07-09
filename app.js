@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 
 app.get('/authd.ejs', function (req, res) {
   let token = req.originalUrl.split("access_token=")[1].split("&")[0]
-  console.log(token)
+  console.log(token, req.originalUrl)
   //let token = window.location.hash.split("access_token=")[1].split("&")[0]
   var result = search.findGroupByTerms('RUBY')
 
