@@ -7,7 +7,6 @@ let url = "https://api.meetup.com/"
 let token = window.location.hash.split("access_token=")[1].split("&")[0]
 let numResults = '3'
 exports.findGroupByTerms = (terms) => {
-  console.log('the button works!')
   terms = Array.isArray(terms) ? terms.join() : terms
   request(`${url}find/groups?page=${numResults}&text=${terms}&access_token=${token}`, (error, response, body) => {
     if (!error && response.statusCode == 200) {
