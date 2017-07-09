@@ -1,0 +1,75 @@
+.menu-top {
+  background-color: black;
+}
+
+#menu-text {
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+#nav-list {
+      text-align: right;
+}
+
+#hero-text {
+    color: black;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+}
+
+#hero-text-subtitle {
+    color: black;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+#sect-head-text {
+    color: white;
+    font-family: Raleway, sans-serif;
+}
+
+#sect2-head-text {
+    color: black;
+    font-family: Raleway; sans-serif;
+}
+.hero {
+    background-color: white;
+}
+
+.sect1 {
+    background-color: black;
+    border-color: black;
+}
+
+.sect2 {
+    background-color: silver;
+    border-color: silver;
+
+}
+
+.hbox {
+    padding-top: 50px;
+    Padding-bottom:50px;
+}
+
+.sect-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/*--- FontAwesome Enhancement ---*/
+* > .fa.fa-hover-show,
+*:hover > .fa.fa-hover-hidden {
+  display: none;
+}
+*:hover > .fa.fa-hover-show {
+  display: inline-block;
+}
+
+.footer_cont a,
+.footer_cont a:hover {
+  display: block;
+  text-decoration: none;
+}

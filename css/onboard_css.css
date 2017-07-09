@@ -1,0 +1,52 @@
+.full-width-bg1 {
+	height: 100%;
+	max-width: 100%;
+	background: url("http://res.cloudinary.com/rollinson/image/upload/c_scale,w_1500/v1499579147/nahuel-hawkes-294637_olxseg.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+body {
+
+}
+
+h1 {
+	font-family: "Libre Baskerville";
+	text-align: center;
+
+}
+
+
+p {
+	font-size: 35px;
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+#top {
+	padding-top: 10%;
+}
+
+button {
+
+  text-align: center;
+  width: 80%;
+
+}
+
+li {
+	font-family: "Libre Baskerville";
+	font-size:21px;
+	color:#2980b9;
+}
+
+img {
+	width:30%;
+	float: left;
+}
+
+#content {
+	padding-top: 40%;
+}
