@@ -8,9 +8,12 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
-app.get('/authd', function (req, res) {
+app.get('/authd', function (err, req, res) {
+  if (err){
+    console.log(err)
+  }
   //let token = req.originalUrl.split("access_token=")[1].split("&")[0]
-  console.log(req.originalUrl)
+  console.log(req.path)
   //let token = window.location.hash.split("access_token=")[1].split("&")[0]
   var result = search.findGroupByTerms('RUBY')
 
