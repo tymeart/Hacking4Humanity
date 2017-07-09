@@ -7,7 +7,21 @@
     <h3> hi </h3>
     <p></p>
 
-    <script src='/js/extracturl.js'></script>
+    <script>
+      let token = window.location.hash.split("access_token=")[1].split("&")[0]
+      let numResults = '3'
+      findGroupByTerms = (terms) => {
+        terms = Array.isArray(terms) ? terms.join() : terms
+        request(`${url}find/groups?page=${numResults}&text=${terms}&access_token=${token}`, (error, response, body) => {
+          if (!error && response.statusCode == 200) {
+            let groups = JSON.parse(body)
+          } else {
+            console.log(response.statusCode)
+          }
+        }
+
+      const results = findGroupByTerms('ruby');
+    </script>
   </body>
 
 </html>

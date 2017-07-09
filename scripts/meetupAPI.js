@@ -11,7 +11,6 @@ let url = "https://api.meetup.com/"
 
 let numResults = '3'
 exports.findGroupByTerms = (terms) => {
-console.log(terms)
   terms = Array.isArray(terms) ? terms.join() : terms
   request(`${url}find/groups?page=${numResults}&text=${terms}&access_token=${token}`, (error, response, body) => {
     if (!error && response.statusCode == 200) {
