@@ -14,10 +14,10 @@ let numResults = '3'
 // let numResults = '3'
 
 
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", `${url}find/groups?page=${numResults}&access_token=${token}`, false ); // false for synchronous request
-    xmlHttp.send( null );
-    console.log(xmlHttp.responseText);
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open( "GET", `${url}find/groups?page=${numResults}&terms=ruby&access_token=${token}`, false ); // false for synchronous request
+  xmlHttp.send( null );
+  console.log(xmlHttp.responseText);
 
 
 
